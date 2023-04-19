@@ -104,6 +104,11 @@ Furthermore, three more windows will pop up. The user can interact with them in 
 
 ![](images/NodeC.PNG)
 
+Node Graph
+-----------------------
+
+![](images/Node_Graph.PNG)
+
 Code Documentation
 -----------------------
 
