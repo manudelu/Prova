@@ -7,7 +7,7 @@
    
 .. moduleauthor:: Manuel Delucchi
 
-A more detailed description of the node:
+A more detailed description of the node::
 
 This node implements an action client allowing the user to set a target (x,y) or to cancel it at any time. 
 Also it publishes the robot position and velocity as a custom message by reling on the topic /odom.  
