@@ -7,7 +7,7 @@
    
 .. moduleauthor:: Manuel Delucchi
 
-A more detailed description of the node::
+A more detailed description of the node:
 
 This node implements an action client allowing the user to set a target (x,y) or to cancel it at any time. 
 Also it publishes the robot position and velocity as a custom message by reling on the topic /odom.  
@@ -65,20 +65,16 @@ def get_target():
 	while True:
 		try:
 			x_pos = float(input("Enter the x value: "))
-		except:
-			print("Please enter a valid number!!")			
-		else:
-			break
-			
-	while True:
-		try:
 			y_pos = float(input("Enter the y value: "))
-		except:
-			print("Please enter a valid number!!")			
-		else:			
-			break	
 			
-	return x_pos, y_pos
+			if -9.0 <= x_pos <= 9.0 and -9.0 <= y_pos <= 9.0:
+				return x_pos, y_pos
+			else:
+				print("Error!! I accept only values between -9.0 and 9.0 for both axis. Retry!!")
+					
+		except:
+			print("Error!! Please enter a valid number!!")			
+
 
 def set_target():
 	"""
