@@ -52,19 +52,13 @@ sudo apt-get install xterm
 
 `Note`: xterm is the standard terminal emulator in the Unix-like environment. A user can have multiple xterm sessions started on one or more displays, which provide an input/output system for the processes launched.
 
-From the root folder move to the `src` folder of the catkin workspace and then you have to create the package called `assignment_2_2022` by typing the following code:
-
-```bash
-catkin_create_pkg assignment_2_2022 rospy roscpp
-```
-
-`Note`: Since I wrote the code using Python, only the command `rospy`is actually needed. Rospy is basically a Python library that will allow you to get access to ROS functionalities inside your Python code.
-
 Finally, you can move inside the package and clone the repository by typing the command:
 
 ```bash
 git clone https://github.com/manudelu/ResearchTrackI_Assignment2.git
 ```
+
+`Note`: Important!! You have to chnage the main folder name from `ResearchTrackI_Assignment2` to `assignment_2_2022`
 
 Then, since inside the source folder there is new content, you need to type the command `catkin_make` inside the `catkin_ws` folder:
 
@@ -72,12 +66,6 @@ Then, since inside the source folder there is new content, you need to type the 
 cd
 cd catkin_ws
 catkin_make
-```
-
-Finally, start the ROS master by executing this command in the terminal (it is required to have ROS installed to use these functionalities):
-
-```bash
-roscore
 ```
 
 Open a new tab in the terminal and run the whole project by running the launch file:
