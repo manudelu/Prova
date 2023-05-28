@@ -92,6 +92,16 @@ Furthermore, three more windows will pop up. The user can interact with them in 
 
 ![](images/NodeC.PNG)
 
+In case you want to use the `Jupyter Notebook` as your main User Interface instead of NodeA you can:
+- Remove the line relative to NodeA inside the `assignment1.launch` file in the `launch` folder.
+- Open a terminal and run the following command to start Jupyter Notebook:
+```bash
+jupyter notebook --allow-root
+```
+- Open a web browser and go to the URL displayed in the terminal after starting Jupyter Notebook.
+- Navigate to `NodeA.jpynb`, inside the `RT2_JupyterNotebook` folder, to open the notebook.
+- Run the program within the notebook by executing the cells and use it as your main User Interface instead of NodeA.
+
 Node Graph
 -----------------------
 
@@ -106,3 +116,8 @@ Structure of Node A: User Interface
 ----------------------
 
 ![](images/FlowChart.png)
+
+Possible Improvements
+-----------------------
+
+- Implement a ros service to print the number of goals reached and the number of goals cancelled.
